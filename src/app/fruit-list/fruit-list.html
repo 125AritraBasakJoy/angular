@@ -1,0 +1,11 @@
+<h2>Fruit List</h2>
+<ul>
+  @for (fruit of fruits; track fruit) {
+    <li
+      (click)="selectedFruit(fruit)"
+      [ngClass]="{ 'active': fruit === selectedFruits }"
+    >
+      {{ fruit }}
+    </li>
+  }
+</ul>

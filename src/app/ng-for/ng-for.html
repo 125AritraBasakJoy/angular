@@ -1,0 +1,7 @@
+<ul>
+    @for (city of cityList; track city; let last = $last) {
+       <li [ngStyle]="{ 'visibility': last ? 'hidden' : 'list-item' }">
+            {{ city }} 
+        </li>
+    }
+</ul>

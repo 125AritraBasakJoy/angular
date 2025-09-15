@@ -1,0 +1,11 @@
+<h2>User Status Check</h2>
+
+@if (userStatus === 'active') {
+  <p>Your account is active.</p>
+}
+@else if (userStatus === 'inactive') {
+  <p>Your account is inactive. Please reactivate.</p>
+}
+@else {
+  <p>Unknown account status.</p>
+}
